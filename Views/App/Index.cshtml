@@ -1,0 +1,32 @@
+﻿
+@model IndexViewModel
+   @{
+         ViewData["Title"] = "Home Page";
+    }
+
+  <!DOCTYPE html>
+   <html>
+        <head> 
+            <title>TigerTix: @ViewData["Title"]</title>
+        </head>
+        <body>
+            <h1>Add a User!</h1>
+
+             <form method="post">
+                <label>Username:</label>
+                <br />
+                <input type="text" name="username"/>
+                <br />
+                <label>Firstname:</label>
+                <br />
+                <input type="text" name="firstname" />
+                <br />
+                <label>Lastname:</label>
+                <br />
+                <input type="text" name="lastname" />
+                <br />
+                <input type="submit" value="Store Name"/>
+            </form>
+        </body>
+   </html>
+
